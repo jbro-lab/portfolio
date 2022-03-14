@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+    <script type="text/javascript" src="loading-bar.js"></script>
+    <style>
+        .header {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: navy;
+            width: 100%;
+            z-index: -1;
+        }
+        .logo {
+            margin-top: 15px;
+            margin-left: 25px;
+            width: 250px;
+        }
+        .welcome {
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            text-shadow: black;
+            text-decoration: black;
+            outline-color: black;
+        }
+        .h2 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+        }
+        .paragraph {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bg-img {
+            background-image: "tannerbldgpic.jpg";
+            background-size: cover;
+            -ms-background-position-x: center;
+            -ms-background-position-y: bottom;
+            background-position: center bottom;
+            text-align: center;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            height: 350px;
+            z-index: -2;
+            top: 25px;
+        }
+        .form {
+            position: absolute;;
+            top: 400px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .heart {
+            position: absolute;
+            top: 450px;
+            left: 700px
+            
+        }
+        .results {
+            position: absolute;;
+            top: 400px;
+            left: 780px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .message{
+            position: absolute;
+            top: 700px;
+            left: 780px;
+        }
+        
+    </style>
+    <script>
+       
+       
+        function calculate() {
+            var bar1 = new ldBar("#myItem1");
+            
+            var sLovePhrase = document.getElementById("lovePhrase").value;
+            var sName1 = document.getElementById("name1").value;
+            var sName2 = document.getElementById("name2").value;
+            var iFactor = 1;
+            var abCheckbox = [];
+            sLovePhrase = sLovePhrase.toLowerCase();
+            sName1 = sName1.toLowerCase();
+            sName2 = sName2.toLowerCase();
+            sLovePhrase = sLovePhrase.replace(/ /g, "");
+            var sNamePamoja = sName1.replace(/ /g, "") + sName2.replace(/ /g, "");
+            var iLoveCount = 0;
+            var iPower; 
+
+            if (sNamePamoja !== "" && sLovePhrase !== ""){
+                for (let i = 1; i <= 5; i++) {
+                    if (document.getElementById("checkbox" + i).checked == true) {
+                        abCheckbox.push(true); 
+                        if (i == 5) {
+                            iFactor += 0.5
+                        }   
+                        else {
+                            iFactor += 0.25
+                        }
+                    }
+                    else {
+                        abCheckbox.push(false);
+                    }
+                }
+
+                for (let i = 0; i < sLovePhrase.length; i++) {
+                    for(let j = 0; j < sNamePamoja.length; j++){
+                        if (sLovePhrase.charAt(i) == sNamePamoja.charAt(j)){
+                            iLoveCount++;
+                        }
+                    }
+                }
+                iPower = Math.ceil(((iLoveCount / sLovePhrase.length) * 22) * iFactor);
+                bar1.set(iPower);
+            }
+            else {
+                alert("Please enter names and a love phrase!");
+                document.getElementById("lovePhrase").focus();
+            }
+            if (iPower >= 100) {
+                document.getElementById("output").innerHTML = "Perfect Marriage!";
+            }
+            else if (iPower >= 85){
+                document.getElementById("output").innerHTML = "Get Married!";
+            }
+            else if (iPower >= 70){
+                document.getElementById("output").innerHTML = "It might work!";
+            }
+            else {
+                document.getElementById("output").innerHTML = "Keep trying!";
+            }
+        }
+
+            // Sets the hearts fill to 0 and the focus to the love phrase input box
+        function onLoad() {
+            startBar();
+            document.getElementById("lovePhrase").focus;
+        }
+
+            // Sets the heart fill to 0
+        function startBar() {
+            var bar1 = new ldBar("#myItem1");
+            bar1.set(0);
+        }
+        function reset(){
+            document.getElementById("lovePhrase").value = "";
+            document.getElementById("name1").value = "";
+            document.getElementById("name2").value = "";
+            document.getElementById("checkbox1").checked = false;
+            document.getElementById("checkbox2").checked = false;
+            document.getElementById("checkbox3").checked = false;
+            document.getElementById("checkbox4").checked = false;
+            document.getElementById("checkbox5").checked = false;
+            onLoad();
+        }        
+
+    </script>
+</head>
+<body onload="onLoad()">
+    <div class="header">
+        <a href="https://marriottschool.byu.edu/infosys/" alt="Marriot School banner" >
+            <img src="msb_logo_primary_centered_white.svg" class="logo">
+        </a>
+    </div>
+    <div class="bg-img">
+        <img class="bg-img" src="mountains.jpg">
+    </div>
+    <div>
+        <h1 class="welcome">BYU IS Dating Site</h1>
+    </div>
+        <br>
+        <br>
+        <br>
+    <div class="form">
+        <h2 class="h2">Welcome!</h2>
+        <p class="paragraph">
+            This is ISMAREED, the one and only BYU information Systems Dating site
+        </p>
+   
+        <fieldset style="width:fit-content;">
+            <legend>Fill out this form</legend>
+            <label for="lovePhrase">What is the love phrase? </label>
+            <input type="text" id="lovePhrase" placeholder="Enter Love Phrase">
+            <br>
+            <label for="name1">Enter first person's first and last name: </label>
+            <input type= "text" id="name1">
+            <br>
+            <label for="name2">Enter second person's first and last name: </label>
+            <input type= "text" id="name2">
+            <br>
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1"> We will communicate often</label>
+            <br>
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2"> We will not be selfish</label>
+            <br>
+            <input type="checkbox" id="checkbox3">
+            <label for="checkbox3"> We will serve each other</label>
+            <br>
+            <input type="checkbox" id="checkbox4">
+            <label for="checkbox4"> My spouse will be my best friend</label>
+            <br>
+            <input type="checkbox" id="checkbox5">
+            <label for="checkbox5"> We will remember God</label>
+            <br>
+            <button type="button" id="calculate" onclick="calculate()">Click Me!</button>
+            <button type="button" id="reset" onclick="reset()">Reset</button>
+        </fieldset>
+    </div>
+    <br><br>
+    <div>
+        <h2 class="results">Results</h2>
+        <p id="myItem1" class="ldbar label-center heart" class="heart" style="width:250px;height:250px;"></p>
+        <p id="output" class="message"></p>
+    </div>
+</body>
+</html>

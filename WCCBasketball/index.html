@@ -1,0 +1,124 @@
+<!--Justis Brown, Reigen Jensen, Bobo Choi, Miles Paulsen, Grayson
+Fattelah, Josiah Sarles-->
+<!--Description: Basically, this program takes all of the WCC teams as listed
+and makes them play each other. Each team plays each other twice.
+When the season is over, the teams are sorted out by their records. If
+a team has the same record as another one, points for is used as a tie breaker.
+If both teams have the same record and total points for, points against is
+used as a tiebreaker-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <script src="javascript2.js">
+        </script>
+    </head>
+    <link id="stylesheet" href="styles2.css" rel="stylesheet" type="text/css">
+    <body>
+        <header id="header">
+            <br>
+                <img class="logosTop" src="images/BYU.png">
+                <img class="logosTop" src="images/index.png">
+            <img class="wccLogo" src="images/WCC logo.svg">
+                <img class="logosTop" src="images/Loyola Marymount.png">
+                <img class="logosTop" src="images/Pacific.png">
+                <br>
+                <br>
+                <img class="logos" src="images/pepperdine2.png">
+                <img class="logos" src="images/Portla d.png" alt="">
+                <img class="logos" src="images/San Diego.png" alt="">
+                <img class="logos" src="images/San Francisco.png" alt="">
+                <img class="logos" src="images/Santa Clara.png">
+                <img class="logos" src="images/St. Mary's.png" alt="">
+        </header>
+        <div class="body1">
+        </div>
+        <ul id="teamList"><!--these start off as hidden cuz I only want
+        the logos to show-->
+            <li id="t1" hidden>BYU</li>
+            <li id="t2" hidden>Gonzaga</li>
+            <li id="t3" hidden>Loyola</li>
+            <li id="t4" hidden>Pacific</li>
+            <li id="t5" hidden>Pepperdine</li>
+            <li id="t6" hidden>Portland</li>
+            <li id="t7" hidden>Saint Marys</li>
+            <li id="t8" hidden>San Diego</li>
+            <li id="t9" hidden>San Francisco</li>
+            <li id="t10" hidden>Santa Clara</li>
+        </ul>
+        <h2 class="directions" id="directions">
+            Hello and welcome to the West Coast Conference! To play out an entire season just click the play game button and see
+            the entire season unfold before your eyes. May the best team win!
+        </h2>
+        <img class="champPic" src="" id="champPic">
+        <h2 class="" id="champion">
+        </h2>
+        <br>
+        <!--only play game button will show at first, others will come later-->
+        <input class="button" type="button" id="playAgain" value="Play Again" onclick="playGame()" hidden>
+        <input class="button" type="button" id="playGame" value="Play Game" onclick="playGame()">
+        <input class="button" type="button" id="showGames" value="See Individual Games" onclick="showGames()" hidden>
+        <input class="button" type="button" id="hideGames" value="Hide Individual Games" onclick="hideGames()" hidden>
+        <br>
+        <div class="column">
+        <p id="1">
+            <p id="games1">
+            </p>
+        </p>
+        </div>
+        <div class="column">
+        <p id="2">
+            <p id="games2">
+            </p>
+        </p>
+        </div>
+        <div class="column">
+        <p id="3">
+            <p id="games3">
+            </p>
+        </p>
+        </div>
+        <div class="column">
+        <p id="4">
+            <p id="games4">
+            </p>
+        </p>
+        </div>
+        <div class="column">
+        <p id="5">
+            <p id="games5">
+            </p>
+        </p>
+        </div>
+        <div class="column">
+        <p id="6">
+            <p id="games6">
+            </p>
+        </p>
+        </div>
+        <div class="column">
+        <p id="7">
+            <p id="games7">
+            </p>
+        </p>
+        </div>
+        <div class="column">
+        <p id="8">
+            <p id="games8">
+            </p>
+        </p>
+        </div>
+        <div class="column">
+        <p id="9">
+            <p id="games9">
+            </p>
+        </p>
+        </div>
+        <div class="column">
+        <p id="10">
+            <p id="games10">
+            </p>
+        </p>
+        </div>
+    </body>
+</html>

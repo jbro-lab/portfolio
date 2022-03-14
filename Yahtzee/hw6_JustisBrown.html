@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Justis Brown
+    Section 2
+    
+    Description: This program is basically a Yahtzee game,
+    it asks the user what number they want to get for all 5 dice then it 
+    rolls and counts how many times each die takes before it rolls the desired number.
+    results are then displayed-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+         body {background-color:white; font-size:xx-large; font-family:fantasy;}
+         div {text-align: center;}
+         h1{text-align: center; background-color: white;}   
+         button{background-color: darkred; color: white; stroke-width: 10px;}   
+    </style>
+    <script>   
+    //this function is called every time a die is rolled.
+    // it's designed to generate a random number between 1 and 6
+    // and then count the number of rolls it takes to get to the desired 
+    //number
+        function rollTheDie(yahtzee) {
+            let iRandNum = Math.floor(Math.random() * 7);
+            var iRolls = 1;
+            
+            while (yahtzee!==iRandNum) {
+                iRandNum = Math.floor(Math.random() * 7);
+                iRolls++;
+            }
+            
+            return iRolls;
+        }
+        /* check just checks to see whether or not the nuber the user input is between 1
+        and 6 and then display results
+        */
+       function check() {
+           let iYahtzee = parseInt(document.getElementById("diceToUse").value);
+            let aiRolls = [];
+            let asOutputs= [];
+            let iTotal = 0;
+            if (iYahtzee < 1 || iYahtzee > 6) {
+                alert("Please enter a number between 1 and 6");
+                document.getElementById("diceToUse").value = "";
+                document.getElementById("diceToUse").focus();
+                //checks to make sure iYahtzee is between 1 and 6
+                //displays alert if not, and sets values to null and focus to text box
+            }
+            else {
+                for(let i = 0; i < 5; i++){
+                    aiRolls[i] = rollTheDie(iYahtzee) ;
+                    asOutputs[i] = "Dice #" + (i + 1) + " Rolls = " + aiRolls[i];
+                    iTotal += aiRolls[i];
+                }//for loop for rolling each die; rollTheDie function is called each loop around
+                //below displays the number of rolls and total rolls to the innerhtml of the p tags
+                document.getElementById("die1").innerHTML = asOutputs[0];
+                document.getElementById("die2").innerHTML = asOutputs[1];
+                document.getElementById("die3").innerHTML = asOutputs[2];
+                document.getElementById("die4").innerHTML = asOutputs[3];
+                document.getElementById("die5").innerHTML = asOutputs[4];
+                document.getElementById("total").innerHTML = "Total Rolls = " + iTotal;
+                document.getElementById("congrats").innerHTML = "Yahtzee!!!"
+
+                //if statements for determining which die pics are to be displayed
+                //displays those die pics
+                if (iYahtzee == 1) {
+               document.getElementById("diePic1").src="dice1Use.jpg";
+               document.getElementById("diePic2").src="dice1Use.jpg";
+               document.getElementById("diePic3").src="dice1Use.jpg";
+               document.getElementById("diePic4").src="dice1Use.jpg";
+               document.getElementById("diePic5").src="dice1Use.jpg";
+               
+           }
+           else if (iYahtzee == 2){
+                document.getElementById("diePic1").src="dice2Use.jpg";
+                document.getElementById("diePic2").src="dice2Use.jpg";
+                document.getElementById("diePic3").src="dice2Use.jpg";
+                document.getElementById("diePic4").src="dice2Use.jpg";
+                document.getElementById("diePic5").src="dice2Use.jpg";
+               
+           }
+           else if (iYahtzee == 3){
+                document.getElementById("diePic1").src="dice3Use.jpg";
+                document.getElementById("diePic2").src="dice3Use.jpg";
+                document.getElementById("diePic3").src="dice3Use.jpg";
+                document.getElementById("diePic4").src="dice3Use.jpg";
+                document.getElementById("diePic5").src="dice3Use.jpg";
+               
+           }
+           else if (iYahtzee == 4){
+                document.getElementById("diePic1").src="dice4Use.jpg";
+                document.getElementById("diePic2").src="dice4Use.jpg";
+                document.getElementById("diePic3").src="dice4Use.jpg";
+                document.getElementById("diePic4").src="dice4Use.jpg";
+                document.getElementById("diePic5").src="dice4Use.jpg";
+                
+           }
+           else if (iYahtzee == 5){
+                document.getElementById("diePic1").src="dice5Use.jpg";
+                document.getElementById("diePic2").src="dice5Use.jpg";
+                document.getElementById("diePic3").src="dice5Use.jpg";
+                document.getElementById("diePic4").src="dice5Use.jpg";
+                document.getElementById("diePic5").src="dice5Use.jpg";
+                
+           }
+           else {
+                document.getElementById("diePic1").src="dice6Use.jpg";
+                document.getElementById("diePic2").src="dice6Use.jpg";
+                document.getElementById("diePic3").src="dice6Use.jpg";
+                document.getElementById("diePic4").src="dice6Use.jpg";
+                document.getElementById("diePic5").src="dice6Use.jpg";
+           }
+
+        }
+
+    }
+
+    function reset() {
+        document.getElementById("diePic1").src="";
+        document.getElementById("diePic2").src="";
+        document.getElementById("diePic3").src="";
+        document.getElementById("diePic4").src="";
+        document.getElementById("diePic5").src="";
+        document.getElementById("diceToUse").value = "";
+        document.getElementById("die1").innerHTML = "";
+        document.getElementById("die2").innerHTML = "";
+        document.getElementById("die3").innerHTML = "";
+        document.getElementById("die4").innerHTML = "";
+        document.getElementById("die5").innerHTML = "";
+        document.getElementById("total").innerHTML = "";
+        document.getElementById("congrats").innerHTML= "";
+        document.getElementById("diceToUse").focus();        
+    }
+    </script>
+</head>
+<body>
+    <h1><!--supposed to be the page banner-->
+        <img src="yahtzeebanner.jpg" style="height: 200px;">
+    </h1>
+    <div ><!--these pics not vis at first, welcome changes to congrats after function runs-->
+        <p id="congrats" style="font-size: 50px;">Welcome to Yahtzee!</p>
+    <img src="" id="diePic1"><img src="" id="diePic2"><img src="" id="diePic3">
+    <img src="" id="diePic4"><img src="" id="diePic5">
+    <br><!--p tags for displaying results-->
+    <p id="die1"></p>
+    <p id="die2"></p>
+    <p id="die3"></p>
+    <p id="die4"></p>
+    <p id="die5"></p>
+    <p id="die6"></p>
+    <p id="total"></p>
+    <label for="diceToUse">What number do you want for Yahtzee?</label>
+    <br><!--text input tag for the user to enter a number between 1 and 6-->
+    <input type="text" id="diceToUse" placeholder="Enter a # 1-6" style="background-color: lightgoldenrodyellow;">
+    <button type="button" id="yahtzee" onclick="check()" >Click Me!</button>
+    <!--buttons run corresponding functions; reset just sets all values to zero-->
+
+    
+    <br>
+    <button type="button" id="reset" onclick="reset()">Reset</button>
+    </div>
+    
+
+</body>
+</html>

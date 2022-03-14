@@ -1,0 +1,31 @@
+<!--Justis Brown
+This is the output page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Song Results</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="styles++.css" rel="stylesheet" type="text/css">
+</head>
+<header>
+    <h1>RANKINGS:</h1>
+</header>
+<br><br><br>
+<body onload="showIt()">
+    <p id="output"></p>
+    <script>
+       function showIt(){
+           let length = localStorage.getItem("length");
+           let aContestants = [];
+           let output;
+           for(let i = 0; i < length; i++){
+             aContestants[i] = localStorage.getItem("item" + i);
+           }
+           output = aContestants.join("<br><br><br>");
+           document.getElementById("output").innerHTML = output;
+       }
+    </script>   
+</body>
+</html>

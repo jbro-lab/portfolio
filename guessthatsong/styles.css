@@ -1,0 +1,72 @@
+/*you're working on moving stuff to the middle of the page*/
+.button {
+    position: relative;
+    font-family: monospace ;
+    background-color:white;/* Green */
+    -webkit-text-fill-color:white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+header {
+    position: relative;
+    color: rgba(15, 12, 12, 0.856);
+    text-align: left;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    
+}
+
+
+
+body {
+    background-image: url(images/guessTheSong.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;  
+    color: white;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+.welcome{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.directions {
+    text-align: justify; 
+}
+
+.titleDisplay {
+    text-align: center;
+    font-size: 25px;
+    
+    
+}
+
+.inputText {
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:black;
+}
+
+.mainFieldset {
+    position: absolute;
+    top: 300px;
+    right: 10px;
+}
+

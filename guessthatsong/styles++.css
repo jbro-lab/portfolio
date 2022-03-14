@@ -1,0 +1,12 @@
+body {
+    background-image: none;
+    background-image: url(images/guessTheSong.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+h1 {
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:white;
+}
