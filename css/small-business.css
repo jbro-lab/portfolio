@@ -18,8 +18,16 @@ body {
 
 .card-img-top {
   width: 100%;
-  
-  object-fit: cover;
+  height: 12vh;
+  object-fit: contain;
 }
 
+.card-title {
+  text-align: center;
+}
 
+.outline-text--black {
+  text-shadow: 2px 2px 5px black;
+  /* -webkit-text-stroke: 0.1px black;
+  -webkit-text-fill-color: white; */
+}
