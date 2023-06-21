@@ -24,6 +24,19 @@ const coursesElementOffset = coursesElement.offsetTop;
 const skillsElementOffset = skillsElement.offsetTop;
 const contactElementOffset = contactElement.offsetTop;
 
+function handleClick(event) {
+  homeNav.classList.remove("active");
+  currentWorkNav.classList.remove("active");
+  webdevNav.classList.remove("active");
+  datasecNav.classList.remove("active");
+  aboutmeNav.classList.remove("active");
+  coursesNav.classList.remove("active");
+  skillsNav.classList.remove("active");
+  contactNav.classList.remove("active");
+
+  event.target.classList.add("active");
+}
+
 function isBottomOfPage() {
   const documentHeight = Math.max(
     document.body.scrollHeight,
@@ -138,4 +151,14 @@ function handleScroll() {
     homeNav.classList.add("active");
   }
 }
+
 window.addEventListener("scroll", handleScroll);
+
+homeNav.onclick = handleClick;
+currentWorkNav.onclick = handleClick;
+webdevNav.onclick = handleClick;
+datasecNav.onclick = handleClick;
+aboutmeNav.onclick = handleClick;
+coursesNav.onclick = handleClick;
+skillsNav.onclick = handleClick;
+contactNav.onclick = handleClick;
