@@ -1,0 +1,194 @@
+[
+  {
+    "section": "Current Work & Articles",
+    "link": "https://github.com/jbro-lab/Beauty-Classifier",
+    "heading": "Looksmax",
+    "content": "<b>2023</b>: A Python/Flask Web App that leverages DeepFace and other machine learning models to rate a person's looks on a scale from 1-10. Very corny!"
+  },
+  {
+    "section": "Current Work & Articles",
+    "link": "https://www.loom.com/share/458496c965484e22b180d160f4d4c512?sid=d3b15a52-2f32-48af-9821-5522d167d655",
+    "img": "img/shopify.jpg",
+    "heading": "Not Clean Simple Eats",
+    "content": "<b>2023</b>: A Shopify website I created in preparation for an interview. I created a video run through of the site so that I don't have to pay to host the site on Shopify."
+  },
+  {
+    "section": "Current Work & Articles",
+    "link": "https://www.linkedin.com/pulse/filter-sort-multi-word-strings-relevance-using-jaro-similarity-brown%3FtrackingId=pwl5QWDjSSC28Y6MexdoaQ%253D%253D/?trackingId=pwl5QWDjSSC28Y6MexdoaQ%3D%3D",
+    "img": "img/DALL·E 2023-05-22 17.24.17 - Rembrandt using a computer, in Rembrandt's own style.png",
+    "heading": "Filter and Sort Multi-Word Strings by Relevance Using Jaro Similarity",
+    "content": "<b>2023 Article</b>: Filtering and sorting multi-word strings for relevance in a way that overcomes typos and size-sensitivity"
+  },
+  {
+    "section": "Current Work & Articles",
+    "link": "https://oare.byu.edu",
+    "img": "img/byu_circle.png",
+    "heading": "OARE - Old Assyrian Research Environment (BYU)",
+    "content": "<b>2021-2023</b>: This is my current work. I don't do anything with Old Assyrian, I'm just helping build the website. Built with Node.js, Vue.js, TypeScript, AWS, MySQL, Knex.js"
+  },
+  {
+    "section": "Current Work & Articles",
+    "link": "https://jbro-lab.github.io/translucent-health/",
+    "img": "https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    "heading": "Master's Capstone - Translucent Health",
+    "content": "<b>2023</b>: This is my group's capstone project. It's a website that helps you know how much you'll pay before you go to the doctor for imaging or elective procedures. It was originally built with Node.js, React.js, AWS, PostgreSQL. To be able to host it for free on GitHub Pages, I converted it to a frontend-only React app that calls a public read-only REST API I created for this purpose."
+  },
+  {
+    "section": "Current Work & Articles",
+    "link": "https://www.linkedin.com/pulse/gpt-35-turbo-api-generating-human-readable-procedure-names-brown%3FtrackingId=EdkW%252B3Q%252BQwuZoBsow6Qf3Q%253D%253D/?trackingId=EdkW%2B3Q%2BQwuZoBsow6Qf3Q%3D%3D",
+    "img": "img/openai-logomark.svg",
+    "heading": "Using GPT-3.5-turbo API to Generate Human Readable Medical Procedure Names and Description",
+    "content": "<b>2023 Article: </b>In our capstone project, we tackled the challenge of making healthcare pricing data more accessible to the public. The cryptic nature of medical procedure names posed a significant hurdle. But with the help of fellow BYU MISM students and ChatGPT, we found a solution. Using the gpt-3.5-turbo API, we automated the process of generating human-readable names and descriptions for complex medical procedures. The results were promising, as ChatGPT proved adept at transforming unintelligible names into layman-friendly terms. To whomever suggested we use ChatGPT to solve this problem: thank you! You can see the repository <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/jbro-lab/chatGPT\">here</a>."
+  },
+  {
+    "section": "Web Development",
+    "link": "https://github.com/mpixton/WINTEX.git",
+    "img": "img/WINTEX.png",
+    "heading": "WINTEX - Fag El Gamous Project",
+    "content": "<b>2021</b>: This is a git repository of a huge group project three teammates and I worked on. It's based in ASP.Net C# MVC Core. It has a fully functional database and tons of functionality. I'm working on getting a video of the runthrough we did."
+  },
+  {
+    "section": "Web Development",
+    "link": "https://github.com/jbro-lab/AWS3ServerStack.git",
+    "img": "img/cloudformation.jpg",
+    "heading": "CloudFormation Template",
+    "content": "<b>2021</b>: This is a git repository of an AWS CloudFormation Template. The template will spin up a VPC, subnet, and 3 EC2 instances. The template will automatically install apache on each webserver while starting up. An index.html file is also automatically created that looks something like <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"BronzeAge/index.html\">this</a>."
+  },
+  {
+    "section": "Web Development",
+    "link": "https://github.com/jbro-lab/JustisBookstore.git",
+    "img": "img/book.jpg",
+    "heading": "Justis' Bookstore",
+    "content": "<b>2021</b>: This is a git repository of a ASP.Net C# MVC Core application modeling a bookstore. The applicaton includes a fully functional database with a cart, pagination, etc. This is just a really nice MVC core web app."
+  },
+  {
+    "section": "Web Development",
+    "img": "img/BCR-logo-trans.PNG",
+    "heading": "Black Cyber Recruiter (Not Available)",
+    "content": "<b>2020</b>: This was a competitive group project that was meant to help bridge the unemployment gap between Americans who happen to be white and Americans who happen to be black. It was built using the Python Django framework and includes recommender algorithms that match applicants with companies and companies with applicants. It includes frontend, backend, and database capabilities. The site also has a secure admin page. This was built entirely in 5 days."
+  },
+  {
+    "section": "Web Development",
+    "img": "img/10XLegalTech.png",
+    "heading": "10X Legal Tech (Not Available)",
+    "content": "<b>2020</b>: This website was created as a way for 10X LegalTech (a startup) to have CRUD capabilities for customers and invoices to those customers. It was just a hypothetical project and 10X Legal Tech is not actually using this web application. It was built using the Python Django framework and has complete frontend and backend capabilities. The site also has a secure admin page."
+  },
+  {
+    "section": "Web Development",
+    "link": "https://trashdashaz.github.io/",
+    "img": "img/useTrashDashAZ.png",
+    "heading": "Trash Dash AZ",
+    "content": "<b>2020</b>: This is a static site I made for my brother's trash removal business. It has multiple pages and is pretty simple, but good-looking."
+  },
+  {
+    "section": "Web Development",
+    "link": "SeLlamaPeru/index.html",
+    "img": "img/SeLlamaPeruLogo.jpg",
+    "heading": "Se Llama Peru",
+    "content": "<b>2021</b>: This is a mock static website I made for a local company called Se Llama Peru. It's simple but clean."
+  },
+  {
+    "section": "Web Development",
+    "link": "WCCBasketball/index.html",
+    "img": "img/WCC background.png",
+    "heading": "WCC Basketball",
+    "content": "<b>2020</b>: A simple simulation of a WCC conference basketball season. You can see who ended up being the conference champion and the scores from every game. Hopefully BYU wins lol. It's built entirely with JavaScript, HTML, and CSS. Nothing fancy, but there's a lot of logic going on in the background."
+  },
+  {
+    "section": "Web Development",
+    "link": "Yahtzee/hw6_JustisBrown.html",
+    "img": "Yahtzee/yahtzeebanner.jpg",
+    "heading": "Yahtzee",
+    "content": "<b>2020</b>: A really simple version of Yahtzee using JavaScript, HTML, and CSS. Lots of big brain logic going on behind the scenes. Not much else to say about it. Also, don't sue me for using papyrus."
+  },
+  {
+    "section": "Web Development",
+    "link": "jsondata/index.html",
+    "img": "img/JSON.png",
+    "heading": "JSON Data",
+    "content": "<b>2020</b>: In this project, I asynchronously query a bunch of titles from a rest API and display either the completed or uncompleted titles. Uncompleted titles can be marked as completed and then be displayed with the completed titles. Written using JavaScript."
+  },
+  {
+    "section": "Web Development",
+    "img": "img/ring.jpg",
+    "heading": "ISMAREED",
+    "content": "<b>2020</b>: The unofficial BYU Information Systems Dating Site lol. It's that silly game where you pick a phrase and then enter your name and your crush's name to see how 'compatible' you are. I used JavaScript, HTML, and CSS to build this. <b>Not Mobile Friendly</b>"
+  },
+  {
+    "section": "Web Development",
+    "link": "guessthatsong/index.html",
+    "img": "img/guessThatSong.png",
+    "heading": "Guess That Song",
+    "content": "<b>2020</b>: Basically, it's hangman but with songs. You can play multiple games and keep track of your scores. You can also play as different users and compare scores. Also written in JavaScript. There's some really big brain logic behind the scenes in this project. <b>Not Mobile Friendly</b>"
+  },
+  {
+    "section": "Data Analytics, Machine Learning, and Security",
+    "link": "https://github.com/jbro-lab/oa",
+    "img": "img/cuneiformicon.png",
+    "heading": "Old Assyrian Language Model",
+    "content": "<b>2023</b>: This is a git repository for a language model I built using TensorFlow and Keras with data from BYU's Old Assyrian Research Environment database. It works moderately well"
+  },
+  {
+    "section": "Data Analytics, Machine Learning, and Security",
+    "link": "https://github.com/joshuackeller/shiny_app",
+    "img": "img/patent.png",
+    "heading": "Patent Analytics - R-Shiny",
+    "content": "<b>2023</b>: This is a git repository for an R-Shiny dashboard I collaborated on. It allows users to see the companies which have filed for the most patents with a given cpc code. A user can also see the areas where the most patents have been filed for a given cpc code."
+  },
+  {
+    "section": "Data Analytics, Machine Learning, and Security",
+    "link": "https://github.com/jbro-lab/chatGPT",
+    "img": "img/openai-logomark.svg",
+    "heading": "Generating Medical Procedure Names and Descriptions with gpt-3.5-turbo",
+    "content": "<b>2023</b>: This is the git repository for the article located <a href=\"#gpt-3.5-article\">here</a>"
+  },
+  {
+    "section": "Data Analytics, Machine Learning, and Security",
+    "link": "https://github.com/jbro-lab/bam",
+    "img": "img/languagemodel.png",
+    "heading": "Book Language Model",
+    "content": "<b>2023</b>: This is another git repository for a language model I built using TensorFlow and Keras with text from a book. It works moderately well"
+  },
+  {
+    "section": "Data Analytics, Machine Learning, and Security",
+    "link": "https://jbro-lab.github.io/ctf/",
+    "img": "img/cyberkillchain.png",
+    "heading": "CTF - Cyber Kill Chain",
+    "content": "<b>2022</b>: This is a ctf I put together to test high school students on their knowledge of the cyber kill chain."
+  },
+  {
+    "section": "Data Analytics, Machine Learning, and Security",
+    "link": "https://docs.google.com/presentation/d/1gVfzAlA6N2Vb2sK8dAE4WHiQU4bdOBelHSqAtdPRDkc/edit?usp=sharing",
+    "img": "img/cyberattack.png",
+    "heading": "Digital Forensics Final Presentation",
+    "content": "<b>2022</b>: For our Digital Forensics final, we had to protect a server from an automated attack while keeping our services up. Afterwards, we had to analyze what the attacker had done. This is the presentation a classmate and I created to explain what we found."
+  },
+  {
+    "section": "Data Analytics, Machine Learning, and Security",
+    "link": "pdf/IS 560 Midterm Penetration Test Report.pdf",
+    "img": "img/pentest.jpg",
+    "heading": "Penetration Test - Midterm Machine",
+    "content": "<b>2021</b>: This is a report of a penetration test I and three teammates worked on. The midterm machine is very similar to metasploitable 2."
+  },
+  {
+    "section": "Data Analytics, Machine Learning, and Security",
+    "link": "https://github.com/jbro-lab/CovidTweetsMLR.git",
+    "img": "img/twitter.jpg",
+    "heading": "Covid/Autism Tweets MLR",
+    "content": "<b>2022</b>: This is a git repository of a MLR model I made for a class. The ipynb is designed to clean the data, improve the model, and predict how many retweets a given tweet will get."
+  },
+  {
+    "section": "Data Analytics, Machine Learning, and Security",
+    "link": "https://github.com/jbro-lab/ThtimuliCoin.git",
+    "img": "img/crypto.jpg",
+    "heading": "Thtimuli Coin",
+    "content": "<b>2022</b>: This is a git repository of a really rough cryptocurrency I made called Thtimuli Coin. The cryptocurrency is based in C#."
+  },
+  {
+    "section": "Data Analytics, Machine Learning, and Security",
+    "link": "https://github.com/jbro-lab/DataCollectionTwitterDepression.git",
+    "img": "img/api.jpg",
+    "heading": "Data Collection from Twitter API",
+    "content": "<b>2022</b>: This is a git repository of an ipynb that uses the twitter API to scrape thousands of tweets about depression and anxiety."
+  }
+]
